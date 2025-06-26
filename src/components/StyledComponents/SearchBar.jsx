@@ -10,8 +10,8 @@ const Input = styled.input({
   width: "100%",
   margin: "0 8px",
   "@media (max-width: 1200px)": {
-    maxWidth: "calc(100% - 24px)",
-    margin: "0",
+    maxWidth: "100%",
+    margin: "0 8px",
   }
 });
 

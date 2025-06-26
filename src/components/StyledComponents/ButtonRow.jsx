@@ -5,4 +5,8 @@ export const ButtonRow = styled.div({
     gap: '16px',
     justifyContent: 'center',
     alignItems: 'center',
+    "@media (max-width: 1200px)": {
+        flexDirection: 'column',
+        gap: '8px',
+    }
 });

@@ -7,7 +7,8 @@ const Wrapper = styled.div({
     gap: "8px",
     flexGrow: 1,
     "@media (max-width: 1200px)": {
-        padding: "0"
+        padding: "0",
+        marginBottom: "16px"
     }
 });
 

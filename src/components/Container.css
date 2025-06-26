@@ -23,6 +23,9 @@
 .date-search-container {
     display: flex;
     align-items: center;
+    @media (max-width: 1200px) {
+       width: 100%;
+    }
 }
 .date-button {
     background: none;

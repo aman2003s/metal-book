@@ -11,4 +11,7 @@ export const Overlay = styled.div({
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 1000,
+    "@media (max-width: 1200px)": {
+        overflow: 'auto',
+    }
 });

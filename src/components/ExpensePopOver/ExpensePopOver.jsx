@@ -15,6 +15,10 @@ import { Button } from '../StyledComponents/Button';
 const Row = styled.div({
   display: 'flex',
   gap: '12px',
+  "@media (max-width: 1200px)": {
+    flexDirection: 'column',
+    gap: '8px'
+  }
 });
 
 function toInputDate(str) {

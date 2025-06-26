@@ -1,0 +1,55 @@
+.recent-transactions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.no-transactions-found {
+    text-align: center;
+    color: #888;
+    padding: 24px 0;
+}
+
+.navigation-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-btn {
+    background: #ececec;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-number-container {
+    display: flex;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.page-number {
+    background: #ececec;
+    border: none;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.page-number.active {
+    background: #42957a;
+    color: #fff;
+}
+.expenses-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}

@@ -1,0 +1,52 @@
+.headline-container {
+    display: flex;
+    height: 36px;
+    line-height: 36px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        height: auto;
+    }
+}
+.white-container {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    color: #000;
+    height: 100%;
+    
+}
+.date-search-container {
+    display: flex;
+    align-items: center;
+}
+.date-button {
+    background: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 16px;
+}
+.date-popup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #000;
+    input {
+        margin-bottom: 4px;
+        padding: 8px;
+        border: 1px solid #888;
+        border-radius: 8px;
+    }
+}

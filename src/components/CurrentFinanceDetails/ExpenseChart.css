@@ -1,0 +1,10 @@
+.chart-container {
+    min-width: 320px;
+    height: 320px;
+    flex-grow: 1;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}

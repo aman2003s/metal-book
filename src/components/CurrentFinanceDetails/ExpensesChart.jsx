@@ -8,6 +8,7 @@ const ExpensesPieChart = () => {
   const [expensesData, setExpensesData] = useState([]);
   const transactions = useSelector(state => state.transactions.transactions);
 
+
   //Options for the chart and styling
   const options = {
     backgroundColor: 'transparent',
@@ -32,6 +33,10 @@ const ExpensesPieChart = () => {
     console.log(expensesData, "expensesData")
   }, [transactions])
 
+  if (transactions.length === 0) {
+    return <div className='chart-container'>No data found</div>
+  }
+  
   return (
     <div className='chart-container'>
       <Chart chartType="PieChart" data={expensesData} width={"100%"} height={"100%"} options={options} />

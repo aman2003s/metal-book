@@ -54,7 +54,7 @@ const RecentTransactions = () => {
             ) : (
                 <div className='no-transactions-found'>No Recent Transactions</div>
             )}
-            <div className='navigation-btn-container'>
+            {!!paginatedTransactions.length > 0 && <div className='navigation-btn-container'>
                 <button className="navigation-btn" onClick={handlePrev} aria-label="Previous page">
                     <FaArrowLeft />
                 </button>
@@ -66,7 +66,7 @@ const RecentTransactions = () => {
                 <button className="navigation-btn" onClick={handleNext} aria-label="Next page">
                     <FaArrowRight />
                 </button>
-            </div>
+            </div>}
         </div>
     )
 }

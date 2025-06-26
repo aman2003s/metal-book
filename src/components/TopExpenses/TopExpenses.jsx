@@ -38,6 +38,10 @@ const TopExpenses = () => {
         ...topExpenses.map(expense => [expense.category, expense.value]),
     ]), [topExpenses]);
 
+    if (topExpenses.length === 0) {
+        return <div className='chart-container'>No data found</div>
+    }
+    
     return (
         <div className='top-expenses-container'>
             <Chart chartType="BarChart" data={expensesData} width={"100%"} height={"100%"} options={options} />

@@ -14,7 +14,8 @@ const RecentTransactions = () => {
     const filteredTransactions = transactions
         .toSorted((a, b) => new Date(a.date) - new Date(b.date))
         .filter(transaction => {
-            const matchesSearch = transaction.title.toLowerCase().includes(search.toLowerCase());
+            //Matches search in title, category, and value in transactios
+            const matchesSearch = transaction.title.toLowerCase().includes(search.toLowerCase()) || transaction.category.toLowerCase().includes(search.toLowerCase()) || transaction.value.toString().includes(search.toLowerCase());
             const transactionDate = new Date(transaction.date);
             const afterStart = !startDate || transactionDate >= new Date(startDate);
             const beforeEnd = !endDate || transactionDate <= new Date(endDate);
